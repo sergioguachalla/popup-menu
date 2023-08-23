@@ -1,18 +1,21 @@
 package com.example.popupmenu;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button buttonPopupMenu, buttonPopupMenu2;
-
+    RelativeLayout relativeLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPopupMenu = findViewById(R.id.btPopupMenu);
         buttonPopupMenu2 = findViewById(R.id.btPopupMenu2);
 
-
+        relativeLayout = findViewById(R.id.RelativeLayout);
         buttonPopupMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         if(menuItem.getItemId() == R.id.popupMenuOne){
                             Toast.makeText(MainActivity.this,"Elegido uno", Toast.LENGTH_LONG);
+
 
                         }
 
@@ -68,27 +72,27 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         if(menuItem.getItemId() == R.id.Menu2Item1){
                             Toast.makeText(MainActivity.this,"Elegido azul", Toast.LENGTH_LONG).show();
-
+                            relativeLayout.setBackgroundColor(Color.BLUE);
                         }
 
                         if(menuItem.getItemId() == R.id.Menu2Item2){
                             Toast.makeText(MainActivity.this,"Elegido rojo", Toast.LENGTH_LONG).show();
-
+                            relativeLayout.setBackgroundColor(Color.RED);
                         }
 
                         if(menuItem.getItemId() == R.id.Menu2Item3){
-                            Toast.makeText(MainActivity.this,"Elegido amarillo", Toast.LENGTH_LONG).show();
-
+                              Toast.makeText(MainActivity.this,"Elegido amarillo", Toast.LENGTH_LONG).show();
+                            relativeLayout.setBackgroundColor(Color.YELLOW);
                         }
 
                         if(menuItem.getItemId() == R.id.Menu2Item4){
                             Toast.makeText(MainActivity.this,"Elegido verde", Toast.LENGTH_LONG).show();
-
+                            relativeLayout.setBackgroundColor(Color.GREEN);
                         }
 
                         if(menuItem.getItemId() == R.id.Menu2Item5){
                             Toast.makeText(MainActivity.this,"Elegido celeste", Toast.LENGTH_LONG).show();
-
+                            relativeLayout.setBackgroundColor(Color.CYAN);
                         }
                         return true;
                     }
