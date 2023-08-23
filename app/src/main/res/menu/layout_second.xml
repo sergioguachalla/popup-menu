@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Azul"
+        android:id="@+id/Menu2Item1"
+        />
+
+    <item
+        android:title="Rojo"
+        android:id="@+id/Menu2Item2"
+        />
+
+    <item
+        android:title="Amarillo"
+        android:id="@+id/Menu2Item3"
+        />
+
+    <item
+        android:title="Verde"
+        android:id="@+id/Menu2Item4"
+        />
+
+    <item
+        android:title="Celeste"
+        android:id="@+id/Menu2Item5"
+        />
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4343A1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invocar Popup Menu"
+        android:id="@+id/btPopupMenu"
+        android:layout_centerInParent="true"
+        android:textSize="24dp"
+        android:backgroundTint="#70AA70"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invocar Popup Menu 2"
+        android:id="@+id/btPopupMenu2"
+        android:textSize="24dp"
+        android:backgroundTint="#225922"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>
